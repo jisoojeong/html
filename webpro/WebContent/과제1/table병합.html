@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="./css/mycss.css" type="text/css">
+	
+		<style type ="text/css">
+		#tab1{
+		border : 2px double purple;
+		}
+		
+		table{
+			border : 5px solid blue;
+			}
+		
+		td{
+			width : 300px;
+			height : 50px;
+			text-align : center;
+			font-size : 2.0em;
+		}
+		
+		caption{
+			font-size : 1.5em;
+			margin-top : 20px;
+			margin-bottom : 20px;
+			caption-side : bottom;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<pre>
+			rowspan : 행병합, 세로로 병합
+			colpspan : 열병합, 가로로 병합
+		</pre>
+	
+		<table border="1">
+			<caption>
+				행과 열의 병합
+			<caption>
+			<tr>
+				<td>1열</td>
+				<td>2열</td>
+				<td>3열</td>
+			</tr>
+			
+			<tr>
+				<td rowspan="2">1행 1열</td>
+				<td>1행 2열</td>
+				<td>1행 3열</td>
+			</tr>
+			
+			<tr>
+				<td>2행 2열</td>
+				<td>2행 3열</td>
+			</tr>
+			
+			<tr>
+				<td colspan="3">3행 1열</td>
+				
+			</tr>
+			
+		</table>
+		
+		<hr>
+		
+		<table id="tab1" border="2">
+			<tr>
+				<td colspan="2"></td>
+				<td colspan="2"></td>
+				<td></td>
+				<td></td>
+			</tr>
+			
+			<tr>
+				<td colspan="4"></td>
+				<td colspan="2"></td>
+				
+			</tr>
+			
+			<tr>
+				<td colspan="4"></td>
+				<td colspan="2" rowspan="2"></td>
+				
+			</tr>
+			
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				
+			</tr>
+			
+		
+	</body>
+</html>

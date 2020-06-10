@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8">
+      <title></title>
+      <link rel="stylesheet" href="./css/mycss.css" type="text/css">
+      
+      <style type="text/css">
+         table{
+            border : 2px solid blue;
+         }
+         
+         td{
+            width : 200px;
+            height : 50px;
+            text-align : center;
+         }
+         caption{
+            font-size : 1.5em;
+            margin-top : 20px;
+            margin-bottom :20px;
+            caption-side : bottom;
+         }
+         #prc2{
+            border : 2px solid purple;
+         }
+         #prc1{
+            text-align : center;
+         }
+         #content{
+            width : 800px;
+         }
+         #title{
+            font-size : 20px;
+            font-weight : bold;
+         }
+      </style>
+   </head>
+   
+   
+   
+   <body>
+      <pre>
+         rowspan   : 행병합, 세로로 병합
+         colspan : 열변합, 가로로 병합
+      </pre>
+      <table border="1">
+         <caption>
+            행과 열의 병합
+         </caption>
+         <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+         </tr>
+         
+         <tr>
+            <td rowspan="2">1</td>
+            <td>2</td>
+            <td>3</td>
+         </tr>
+         
+         <tr>
+            <td>2</td>
+            <td>3</td>
+         </tr>
+         
+         <tr>
+            <td colspan="3">2</td>
+         </tr>
+         
+      </table>
+      
+      <hr>
+      
+      <table id="prc2" border="1">
+         <caption>
+            테이블 연습 2
+         </caption>
+         <tr>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+            <td></td>
+            <td></td>
+         </tr>
+         
+         <tr>
+            <td colspan="4"></td>
+            <td colspan="2"></td>
+         </tr>
+         
+         <tr>
+            <td colspan="4"></td>
+            <td colspan="2" rowspan="2"></td>
+         </tr>
+         <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+         </tr>
+      </table>
+      
+      <hr>
+      
+      <table id="prc1" border="1">
+         <caption>
+            테이블 연습 1
+         </caption>
+         <tr>
+            <td id="title" colspan="5">평생교육원 강좌 소개 - 2019년도 1학기</td>
+         </tr>
+         
+         <tr>
+            <th>강좌이름</th>
+            <th>강의자</th>
+            <th id="content">소개</th>
+            <th>강좌코드</th>
+            <th>실습비</th>
+         </tr>
+         
+         <tr>
+            <td>뎃생과 유화</td>
+            <td>김철수</td>
+            <td id="content">모든 미술 영역의 뼈대를 이루는 뎃생의 기본실력을 체계적으로 다루며, 유화에서는 재료를 다루는 방법에서부터 다양한 표현기법에 이르기까지 전문적인 미술인으로 입문할 수 있도록 각 개인의 수준에 맞추어 개인별, 단계별로 지도합니다.</td>
+            <td>H27</td>
+            <td>100,000원</td>
+         </tr>
+         
+         <tr>
+            <td>바이올린</td>
+            <td>홍길동</td>
+            <td id="content">전반적인 현악기의 특성을 파악하며 기초를 다지고, 데뛰드와 곡을 접하면서 아름다운 음색의 바이올린을 연주할 수 있다.</td>
+            <td>H28</td>
+            <td>200,000원</td>
+         </tr>
+         
+         <tr>
+            <td>성악아카데미</td>
+            <td>김호성</td>
+            <td id="content">강의를 통해 배우고 익힌 곡을 음악회를 통하여 기량을 향상하고 무대를 경험한다.</td>
+            <td>H30</td>
+            <td>300,000원</td>
+         </tr>
+      </table>
+      
+      <hr>
+      
+   </body>
+   
+</html>
